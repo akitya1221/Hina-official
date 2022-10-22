@@ -44,3 +44,49 @@ header {
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
+    header {
+        text-align: center;
+        height: 60px;
+        background-color: #fff;
+        h1 {
+            padding: 5px;
+            font-size: 25px;
+            border-bottom: solid 3px black;
+        }
+    }
+    .top-content {
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+        img {
+            height: 150px;
+        }
+    }
+    .profile {
+        margin-top: 20px;
+        h2 {
+            padding: 0 50px 0 10px;
+            font-size: 20px;
+            margin: 20px;
+            border-bottom: solid 3px black;
+            display: inline-block;
+        }
+        .box {
+            display: flex;
+            margin-left: 20px;
+            li {
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+            img {
+                margin-left: 10px;
+                height: 200px;
+            }
+        }
+    }
+}

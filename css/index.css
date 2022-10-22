@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #ffd9ff;
 }
@@ -56,5 +57,57 @@ header h1 {
 .profile .box img {
   margin-left: 30px;
   height: 400px;
+}
+
+@media screen and (max-width: 480px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
+  header {
+    text-align: center;
+    height: 60px;
+    background-color: #fff;
+  }
+  header h1 {
+    padding: 5px;
+    font-size: 25px;
+    border-bottom: solid 3px black;
+  }
+  .top-content {
+    background-color: #fff;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 30px;
+  }
+  .top-content img {
+    height: 150px;
+  }
+  .profile {
+    margin-top: 20px;
+  }
+  .profile h2 {
+    padding: 0 50px 0 10px;
+    font-size: 20px;
+    margin: 20px;
+    border-bottom: solid 3px black;
+    display: inline-block;
+  }
+  .profile .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 20px;
+  }
+  .profile .box li {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .profile .box img {
+    margin-left: 10px;
+    height: 200px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
