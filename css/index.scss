@@ -37,13 +37,50 @@ header {
         li {
             font-size: 20px;
             margin-bottom: 15px;
+            border-bottom: solid 2px black;
+            p {
+                line-height: 1.3;
+            }
         }
         img {
             margin-left: 30px;
-            height: 400px;
+            height: 350px;
         }
     }
 }
+
+.gallery {
+    width: 80%;
+    height: 600px;
+    margin: 0 10%;
+    background-color: aquamarine;
+    .slider {
+        .slick-slide img { 
+            margin: 0 auto;
+            height: 500px;
+        }
+    }
+}
+
+.sns {
+    width: 100%;
+    background-color: #fff;
+    height: 300px;
+    .sns-box {
+        display: flex;
+        .insta {
+            img {
+                width: 80px;
+            }
+        }
+        .tiktok {
+            img {
+                width: 110px;
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 480px) {
     /* 480px以下に適用されるCSS（スマホ用） */
@@ -58,13 +95,14 @@ header {
         }
     }
     .top-content {
+        height: 100vh;
         background-color: #fff;
         width: 100%;
-        display: flex;
-        justify-content: center;
         padding-bottom: 30px;
+        flex-wrap: wrap;
         img {
-            height: 150px;
+            padding: 20px 0;
+            height: 300px;
         }
     }
     .profile {
