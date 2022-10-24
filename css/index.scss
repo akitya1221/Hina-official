@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(255, 217, 255);
+    background-color: #fff;
 }
 header {
     height: 60px;
@@ -13,17 +13,20 @@ header {
 
 .top-content {
     background-color: #fff;
+    padding-top: 10%;
+    height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
     img {
         height: 500px;
     }
 }
 
 .profile {
-    margin-top: 50px;
+    margin: 0 5% 100px 5%;
+    background-color: rgb(255, 217, 255);
+    padding: 30px 0 50px 0;
     h2 {
         padding: 0 80px 0 10px;
         font-size: 30px;
@@ -33,7 +36,7 @@ header {
     }
     .box {
         display: flex;
-        margin-left: 50px;
+        justify-content: center;
         li {
             font-size: 20px;
             margin-bottom: 15px;
@@ -50,10 +53,18 @@ header {
 }
 
 .gallery {
-    width: 80%;
+    margin-top: 50px;
+    width: 100%;
     height: 600px;
-    margin: 0 10%;
-    background-color: aquamarine;
+    background-color: rgb(255, 217, 255);
+    padding-bottom: 50px;
+    h2 {
+        padding: 0 80px 0 10px;
+        font-size: 30px;
+        margin: 30px;
+        border-bottom: solid 3px black;
+        display: inline-block;
+    }
     .slider {
         .slick-slide img { 
             margin: 0 auto;
@@ -65,20 +76,45 @@ header {
 .sns {
     width: 100%;
     background-color: #fff;
-    height: 300px;
     .sns-box {
+        margin-top: 20px;
+        text-align: center;
         display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
         .insta {
+            margin-right: 50px;
             img {
+                display: block;
+                margin: 15px auto 0 auto;
                 width: 80px;
             }
         }
         .tiktok {
             img {
+                display: block;
+                margin: 0 auto;
                 width: 110px;
             }
         }
     }
+    h2 {
+        padding: 0 80px 0 10px;
+        font-size: 30px;
+        margin: 30px;
+        border-bottom: solid 3px black;
+        display: inline-block;
+    }
+    .movie-box {
+        background-color: #fff;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+footer {
+    text-align: center;
 }
 
 
@@ -98,7 +134,7 @@ header {
         height: 100vh;
         background-color: #fff;
         width: 100%;
-        padding-bottom: 30px;
+        padding: 0;
         flex-wrap: wrap;
         img {
             padding: 20px 0;
@@ -106,7 +142,8 @@ header {
         }
     }
     .profile {
-        margin-top: 20px;
+        margin: 20px 0 0 0;
+        width: 100%;
         h2 {
             padding: 0 50px 0 10px;
             font-size: 20px;
@@ -116,15 +153,38 @@ header {
         }
         .box {
             display: flex;
-            margin-left: 20px;
+            margin: 0 10px;
             li {
                 font-size: 15px;
                 margin-bottom: 15px;
+                list-style: none;
             }
             img {
                 margin-left: 10px;
                 height: 200px;
             }
+        }
+    }
+    .gallery {
+        margin: 0;
+        h2 {
+            padding: 0 50px 0 10px;
+            font-size: 20px;
+            margin: 20px;
+            border-bottom: solid 3px black;
+            display: inline-block;
+        }
+    }
+    .sns {
+        h2 {
+            padding: 0 50px 0 10px;
+            font-size: 20px;
+            margin: 20px;
+            border-bottom: solid 3px black;
+            display: inline-block;
+        }
+        .movie-box {
+            display: block;
         }
     }
 }
