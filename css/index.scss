@@ -3,7 +3,7 @@ body {
 }
 header {
     height: 60px;
-    background-color: #fff;
+    background-color: rgb(243, 193, 255);
     h1 {
         padding: 5px;
         font-size: 40px;
@@ -25,7 +25,7 @@ header {
 
 .profile {
     margin: 0 5% 100px 5%;
-    background-color: rgb(255, 217, 255);
+    background-color: rgb(249, 230, 249);
     padding: 30px 0 50px 0;
     h2 {
         padding: 0 80px 0 10px;
@@ -55,8 +55,7 @@ header {
 .gallery {
     margin-top: 50px;
     width: 100%;
-    height: 600px;
-    background-color: rgb(255, 217, 255);
+    background-color: rgb(249, 230, 249);
     padding-bottom: 50px;
     h2 {
         padding: 0 80px 0 10px;
@@ -69,6 +68,12 @@ header {
         .slick-slide img { 
             margin: 0 auto;
             height: 500px;
+        }
+    }
+    .food-slider {
+        .slick-slide img { 
+            margin: 0 auto;
+            width: 600px;
         }
     }
 }
@@ -122,8 +127,7 @@ footer {
     /* 480px以下に適用されるCSS（スマホ用） */
     header {
         text-align: center;
-        height: 60px;
-        background-color: #fff;
+        height: 40px;
         h1 {
             padding: 5px;
             font-size: 25px;
@@ -173,6 +177,18 @@ footer {
             margin: 20px;
             border-bottom: solid 3px black;
             display: inline-block;
+        }
+        .slider {
+            .slick-slide img { 
+                margin: 0 auto;
+                height: 400px;
+            }
+        }
+        .food-slider {
+            .slick-slide img { 
+                margin: 0 auto;
+                width: 300px;
+            }
         }
     }
     .sns {

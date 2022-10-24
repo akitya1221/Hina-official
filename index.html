@@ -45,9 +45,15 @@
         <div class="gallery">
             <h2>🌱ギャラリー</h2>
             <div class="slider">
-                <div><img src="./images/top1.JPG"></div>
-                <div><img src="./images/top1.JPG"></div>
-                <div><img src="./images/top1.JPG"></div>
+                <div><img src="./images/gallery1.jpg"></div>
+                <div><img src="./images/gallery2.jpg"></div>
+                <div><img src="./images/gallery3.jpg"></div>
+            </div>
+            <h2>🌱飯テロ</h2>
+            <div class="food-slider">
+                <div><img src="./images/food1.JPG"></div>
+                <div><img src="./images/food2.JPG"></div>
+                <div><img src="./images/food3.JPG"></div>
             </div>
         </div>
         <div class="sns">
@@ -111,15 +117,24 @@
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script>
-    $('.slider').slick({
-        autoplay: true,       //自動再生
-        autoplaySpeed: 2000,  //自動再生のスピード
-        speed: 1000,           //スライドするスピード
-        dots: true,           //スライド下のドット
-        arrows: false,         //左右の矢印
-        infinite: true,       //永久にループさせる
-        swipe: true,
-    });
+$('.slider').slick({
+    autoplay: true,       //自動再生
+    autoplaySpeed: 2000,  //自動再生のスピード
+    speed: 1000,           //スライドするスピード
+    dots: true,           //スライド下のドット
+    arrows: false,         //左右の矢印
+    infinite: true,       //永久にループさせる
+    swipe: true,
+});
+$('.food-slider').slick({
+    autoplay: true,       //自動再生
+    autoplaySpeed: 2000,  //自動再生のスピード
+    speed: 1000,           //スライドするスピード
+    dots: true,           //スライド下のドット
+    arrows: false,         //左右の矢印
+    infinite: true,       //永久にループさせる
+    swipe: true,
+});
 </script>
 <!-- -------- -->
 </body>
